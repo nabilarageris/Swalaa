@@ -1,0 +1,29 @@
+#include <iostream>
+#include "tubes1.h"
+
+using namespace std;
+
+   mhs mahasiswa;
+
+      address inputdata() {
+            cout<<"NIM : ";
+            cin>> mahasiswa.NIM;
+            cout<<"nama mahasiswa : ";
+            cin>> mahasiswa.Nama;
+            cout<<"nama ayah : ";
+            cin>> mahasiswa.NmAyah;
+            cout<<"nama ibu : ";
+            cin>> mahasiswa.NmIbu;
+            cout<<"kode mata kuliah : ";
+            cin>> mahasiswa.KMK;
+            cout<<"nama mata kuliah : ";
+            cin>> mahasiswa.NMK;
+            cout<<"semester : ";
+            cin>> mahasiswa.Sem;
+            cout<<"nilai mahasiswa : ";
+            cin>> mahasiswa.Nilai;
+            cout<<"IPK mahasiswa : ";
+            cin>> mahasiswa.IPK;
+
+            return allocate(mahasiswa);
+      }
